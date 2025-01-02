@@ -3,7 +3,8 @@
 #include <thread> // Enables the use of multithreading and sleep functions
 
 
-using namespace std;
+using namespace std; // Simplifies the code by allowing direct use of standard library objects and functions
+
 
 void startStopwatch() {
     cout << "Stopwatch started. Press Enter to stop...\n";
