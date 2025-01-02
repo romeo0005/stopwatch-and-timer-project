@@ -7,6 +7,7 @@ using namespace std; // Simplifies the code by allowing direct use of standard l
 // Function to start the stopwatch
 
 void startStopwatch() {
+     // Inform the user that the stopwatch has started and how to stop it
     cout << "Stopwatch started. Press Enter to stop...\n";
 
     auto start = chrono::high_resolution_clock::now();
