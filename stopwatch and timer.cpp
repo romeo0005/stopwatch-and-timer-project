@@ -30,7 +30,7 @@ int main() {
     int choice;
 
     do {
-        cout << "\nConsole Stopwatch and Timer:\n";
+        cout << "\nSreen for Stopwatch and Timer:\n";
         cout << "1. Start Stopwatch\n";
         cout << "2. Start Timer\n";
         cout << "3. Exit\n";
