@@ -31,6 +31,7 @@ void startTimer(int seconds) {
 `
 int main() {
     int choice;
+        // Display the menu options to the user
 
     do {
         cout << "\nSreen for Stopwatch and Timer:\n";
