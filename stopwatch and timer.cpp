@@ -48,7 +48,6 @@ int main() {
             cin >> seconds;
             startTimer(seconds);
             break;
-        }
         case 3:
             cout << "Exiting program. Goodbye!\n";
             break;
@@ -59,4 +58,3 @@ int main() {
 
     return 0;
 }
-
