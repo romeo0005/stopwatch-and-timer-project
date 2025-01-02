@@ -20,7 +20,7 @@ void startStopwatch() {
 
 void startTimer(int seconds) {
     cout << "Timer set for " << seconds << " seconds.\n";
-
+  // Loop to count down each second
     for (int i = seconds; i > 0; --i) {
         cout << "Time remaining: " << i << " seconds\r" << flush;
         this_thread::sleep_for(chrono::seconds(1));// Wait for 1 second
