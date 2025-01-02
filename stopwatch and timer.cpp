@@ -10,7 +10,7 @@ void startStopwatch() {
      // Inform the user that the stopwatch has started and how to stop it// Record the starting time using high-resolution clock for accurate timing
     cout << "Stopwatch started. Press Enter to stop...\n";
 // Record the starting time using high-resolution clock for accurate timing
-    auto start = chrono::high_resolution_clock::now();
+    auto start = chrono::high_resolution_clock::now(); // Wait for the user to press Enter, effectively letting time pass
     cin.ignore();  // Wait for Enter key press
     auto end = chrono::high_resolution_clock::now();
 
