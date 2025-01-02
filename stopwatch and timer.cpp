@@ -4,7 +4,7 @@
 
 
 using namespace std; // Simplifies the code by allowing direct use of standard library objects and functions
-
+// Function to start the stopwatch
 
 void startStopwatch() {
     cout << "Stopwatch started. Press Enter to stop...\n";
