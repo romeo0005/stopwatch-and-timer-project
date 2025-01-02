@@ -1,5 +1,5 @@
 #include <iostream> //allow the use of input and output stream
-#include <chrono>
+#include <chrono> // Provides high-resolution clocks and time utilities
 #include <thread>
 
 using namespace std;
@@ -25,7 +25,7 @@ void startTimer(int seconds) {
 
     cout << "\nTime's up!\n";
 }
-
+`
 int main() {
     int choice;
 
