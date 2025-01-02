@@ -13,7 +13,7 @@ void startStopwatch() {
     auto start = chrono::high_resolution_clock::now(); // Wait for the user to press Enter, effectively letting time pass
     cin.ignore();  // Wait for Enter key press
     auto end = chrono::high_resolution_clock::now();
-
+  // Calculate the duration in seconds
     auto duration = chrono::duration_cast<chrono::seconds>(end - start);
      // Display the elapsed time
     cout << "Stopwatch stopped. Elapsed time: " << duration.count() << " seconds.\n";
