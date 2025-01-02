@@ -58,7 +58,7 @@ int main() {
         default:
             cout << "Invalid choice. Try again.\n";
         }
-    } while (choice != 3);
+    } while (choice != 3);// Continue until the user chooses to exit
 
     return 0;
 }
