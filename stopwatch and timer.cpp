@@ -15,6 +15,7 @@ void startStopwatch() {
     auto end = chrono::high_resolution_clock::now();
 
     auto duration = chrono::duration_cast<chrono::seconds>(end - start);
+     // Display the elapsed time
     cout << "Stopwatch stopped. Elapsed time: " << duration.count() << " seconds.\n";
 }
 // Function to start a countdown timer for a specified number of seconds
