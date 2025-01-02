@@ -40,7 +40,7 @@ int main() {
         cout << "3. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
-
+// Handle the user's menu choice
         switch (choice) {
         case 1:
             cin.ignore();  // Clear input buffer
