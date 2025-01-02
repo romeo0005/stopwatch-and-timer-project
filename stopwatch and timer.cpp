@@ -1,4 +1,4 @@
-#include <iostream> // allow the use of input and output stream
+#include <iostream>
 #include <chrono>
 #include <thread>
 
