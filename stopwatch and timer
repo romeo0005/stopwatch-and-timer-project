@@ -1,0 +1,62 @@
+#include <iostream>
+#include <chrono>
+#include <thread>
+
+using namespace std;
+
+void startStopwatch() {
+    cout << "Stopwatch started. Press Enter to stop...\n";
+
+    auto start = chrono::high_resolution_clock::now();
+    cin.ignore();  // Wait for Enter key press
+    auto end = chrono::high_resolution_clock::now();
+
+    auto duration = chrono::duration_cast<chrono::seconds>(end - start);
+    cout << "Stopwatch stopped. Elapsed time: " << duration.count() << " seconds.\n";
+}
+
+void startTimer(int seconds) {
+    cout << "Timer set for " << seconds << " seconds.\n";
+
+    for (int i = seconds; i > 0; --i) {
+        cout << "Time remaining: " << i << " seconds\r" << flush;
+        this_thread::sleep_for(chrono::seconds(1));
+    }
+
+    cout << "\nTime's up!\n";
+}
+
+int main() {
+    int choice;
+
+    do {
+        cout << "\nConsole Stopwatch and Timer:\n";
+        cout << "1. Start Stopwatch\n";
+        cout << "2. Start Timer\n";
+        cout << "3. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+        case 1:
+            cin.ignore();  // Clear input buffer
+            startStopwatch();
+            break;
+        case 2: {
+            int seconds;
+            cout << "Enter timer duration in seconds: ";
+            cin >> seconds;
+            startTimer(seconds);
+            break;
+        }
+        case 3:
+            cout << "Exiting program. Goodbye!\n";
+            break;
+        default:
+            cout << "Invalid choice. Try again.\n";
+        }
+    } while (choice != 3);
+
+    return 0;
+}
+
