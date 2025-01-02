@@ -23,7 +23,7 @@ void startTimer(int seconds) {
 
     for (int i = seconds; i > 0; --i) {
         cout << "Time remaining: " << i << " seconds\r" << flush;
-        this_thread::sleep_for(chrono::seconds(1));
+        this_thread::sleep_for(chrono::seconds(1));// Wait for 1 second
     }
 
     cout << "\nTime's up!\n";
