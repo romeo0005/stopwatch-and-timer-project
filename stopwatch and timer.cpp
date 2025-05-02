@@ -4,7 +4,7 @@
 
 
 using namespace std; // Simplifies the code by allowing direct use of standard library objects and functions
-// Function to start the stopwatch
+
 
 void startStopwatch() {
      // Inform the user that the stopwatch has started and how to stop it// Record the starting time using high-resolution clock for accurate timing
