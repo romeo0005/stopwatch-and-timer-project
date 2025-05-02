@@ -1,6 +1,6 @@
 #include <iostream> //allow the use of input and output stream
 #include <chrono> // Provides high-resolution clocks and time utilities
-#include <thread> 
+#include <thread> // Enables the use of multithreading and sleep functions
 
 
 using namespace std; // Simplifies the code by allowing direct use of standard library objects and functions
