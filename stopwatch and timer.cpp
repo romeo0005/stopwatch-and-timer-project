@@ -1,4 +1,4 @@
-#include <iostream> //allow the use of input and output stream
+#include <iostream>
 #include <chrono> // Provides high-resolution clocks and time utilities
 #include <thread> // Enables the use of multithreading and sleep functions
 
