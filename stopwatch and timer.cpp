@@ -32,7 +32,7 @@ void startTimer(int seconds) {
 `
 int main() {
     int choice;
-        // Display the menu options to the user
+        // Display the menu options to the 
 
     do {
         cout << "\nSreen for Stopwatch and Timer:\n";
