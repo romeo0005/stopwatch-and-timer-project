@@ -3,7 +3,7 @@
 #include <thread> // Enables the use of multiding and sleep functions
 
 
-using namespace std; // 
+using namespace std; // Simplifies the code by allowing direct use of standard library objects and functions
 // Function to start the stopwatch
 
 void startStopwatch() {
